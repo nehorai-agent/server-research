@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>שרתי ענן זולים וחינמיים עם מפרט גבוה - מחקר עומק</title>
+<meta name="description" content="מחקר עומק (21.10.2026): שרתים חינמיים וזולים עם הרבה RAM ומעבד - מעבר לספקים המוכרים. טבלאות, אמינות, מקורות.">
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#1a1d21; --muted:#5b6470; --line:#e4e7ec;
+  --accent:#0b6bcb; --accent-soft:#e8f2fc; --good:#137333; --good-soft:#e6f4ea;
+  --warn:#b06000; --warn-soft:#fdf3e3; --bad:#b3261e; --bad-soft:#fdecea;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI",Roboto,"Noto Sans Hebrew",Arial,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.65;font-size:16px}
+.wrap{max-width:880px;margin:0 auto;padding:20px 16px 64px}
+header{padding:28px 0 8px}
+h1{font-size:1.65rem;line-height:1.3;margin-bottom:6px}
+.date{color:var(--muted);font-size:.85rem}
+h2{font-size:1.25rem;margin:34px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+h3{font-size:1.05rem;margin:18px 0 8px}
+p{margin:8px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.tldr{background:var(--accent-soft);border:1px solid #bcd9f5;border-radius:12px;
+  padding:16px 18px;margin:18px 0;font-size:1.02rem}
+.tldr strong{color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:14px 18px;margin:10px 0;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.card h3{margin-top:0}
+.tag{display:inline-block;font-size:.72rem;font-weight:600;border-radius:999px;
+  padding:2px 10px;margin-inline-start:6px;vertical-align:middle}
+.tag.free{background:var(--good-soft);color:var(--good)}
+.tag.paid{background:var(--accent-soft);color:var(--accent)}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
+.tag.unverified{background:var(--bad-soft);color:var(--bad)}
+.specs{display:flex;flex-wrap:wrap;gap:4px 16px;margin:8px 0;color:var(--muted);font-size:.9rem}
+.specs b{color:var(--ink);font-weight:600}
+.price{font-size:1.1rem;font-weight:700}
+.note{color:var(--muted);font-size:.88rem}
+ul{margin:8px 0;padding-inline-start:22px}
+li{margin:4px 0}
+.tablewrap{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;background:var(--card);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:.9rem}
+th,td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:#eef1f5;font-weight:700;font-size:.82rem}
+tr:last-child td{border-bottom:none}
+td.wrap-cell{white-space:normal;min-width:150px}
+@media(max-width:640px){
+  table,thead,tbody,tr,th,td{display:block}
+  thead{display:none}
+  tr{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:var(--card);overflow:hidden}
+  td{border-bottom:1px solid var(--line);white-space:normal;display:flex;justify-content:space-between;gap:12px}
+  td::before{content:attr(data-l);font-weight:700;color:var(--muted);flex-shrink:0}
+  td:last-child{border-bottom:none}
+}
+.src{font-size:.85rem;color:var(--muted)}
+.src li{margin:6px 0;word-break:break-word}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:.8rem}
+.flag{color:var(--bad);font-weight:600}
+.reco{background:var(--good-soft);border:1px solid #bfe3c8;border-radius:12px;padding:14px 18px;margin:10px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<h1>שרתי ענן זולים וחינמיים עם מפרט גבוה</h1>
+<div class="date">מחקר עומק &middot; נבדק ב־21 באוקטובר 2026 &middot; מחירים לחודש, ביורו לפני מע"מ אלא אם צוין דולר</div>
+</header>
+
+<div class="tldr">
+<strong>השורה התחתונה:</strong> שרת של 12 ליבות ו־48GB ב־5 דולר <b>לא קיים</b> - לא אצל ספק מוכר ולא בשום פינה נסתרת. המפרט הזה במחיר האמיתי הזול ביותר עולה כ־20-25 &euro; לחודש (Contabo, עם פשרות). השרת החינמי הכי רציני היום הוא Oracle עם 12GB בלבד, אחרי שהורידו את התוכנית בחצי ביוני 2026. הקשר רקע חשוב: ב־2026 יש מחסור עולמי בזיכרון RAM, והמחירים של רוב הספקים עלו השנה ב־20-40%.
+</div>
+
+<h2>המלצות לפי שימוש</h2>
+<div class="reco">
+<ul>
+<li><b>עבודת רקע ובאצ'ים (לא רגיש לביצועים משתנים):</b> Contabo VPS 12 (&euro;20-25) או AffordableBytes 40GB (&euro;24.99, אמינות לא מוכחת).</li>
+<li><b>סוכנים שצריכים יציבות:</b> netcup RS4000 - 12 ליבות <b>ייעודיות</b>/32GB ב־&euro;32, או שרת ייעודי ממכרז Hetzner - 64GB ב־&euro;49-65.</li>
+<li><b>חינם לגמרי, לנסיון:</b> Oracle Always Free - 12GB ARM, בתנאים שמפורטים למטה.</li>
+<li><b>זמן תגובה נמוך מישראל:</b> Kamatera (חברה ישראלית, 5 חוות שרתים בארץ, תמיכה בעברית) - פחות מ־10ms.</li>
+<li><b>מודלי שפה מקומיים (LLM):</b> לא שרת רגיל - צריך GPU, ושם ספוט זול: Salad מ־$66/חודש ל־RTX 3090.</li>
+</ul>
+</div>
+
+<h2>טבלת השוואה מרכזית - ממוינת לפי תמורה (RAM ליורו)</h2>
+<div class="tablewrap">
+<table>
+<thead><tr><th>ספק ותוכנית</th><th>ליבות</th><th>RAM</th><th>אחסון</th><th>מחיר/חודש</th><th>סוג ליבות</th><th>אמינות</th></tr></thead>
+<tbody>
+<tr><td class="wrap-cell" data-l="ספק">Oracle Always Free</td><td data-l="ליבות">2 (ARM)</td><td data-l="RAM">12GB</td><td data-l="אחסון">200GB</td><td data-l="מחיר"><b>חינם</b></td><td data-l="סוג">ARM משותף</td><td class="wrap-cell" data-l="אמינות">גבוהה, אבל עלול להימחק אם לא פעיל שבוע</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">Kimsufi KS-1 (ייעודי!)</td><td data-l="ליבות">4</td><td data-l="RAM">32GB ECC</td><td data-l="אחסון">1TB</td><td data-l="מחיר"><b>&euro;16.99</b>+הקמה</td><td data-l="סוג">ייעודי מלא</td><td class="wrap-cell" data-l="אמינות">גבוהה (OVH), מלאי נמוך</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">netcup RS4000</td><td data-l="ליבות">12</td><td data-l="RAM">32GB</td><td data-l="אחסון">1TB</td><td data-l="מחיר"><b>&euro;32.09</b></td><td data-l="סוג"><b>ייעודיות</b></td><td class="wrap-cell" data-l="אמינות">גבוהה מאוד, חוזה 12/24 חודשים</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">Hetzner מכרז - Ryzen 5 3600</td><td data-l="ליבות">6</td><td data-l="RAM">64GB</td><td data-l="אחסון">1TB NVMe + 2&times;6TB</td><td data-l="מחיר"><b>&euro;49-69</b></td><td data-l="סוג">ייעודי מלא</td><td class="wrap-cell" data-l="אמינות">גבוהה מאוד, ללא דמי הקמה</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">Contabo VPS 12</td><td data-l="ליבות">12</td><td data-l="RAM">48GB</td><td data-l="אחסון">400GB SSD</td><td data-l="מחיר"><b>&euro;20</b> (בהתחייבות 24 ח׳)</td><td data-l="סוג">משותפות, עמוסות</td><td class="wrap-cell" data-l="אמינות">בינונית - פירוט למטה</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">AffordableBytes 40GB <span class="tag unverified">אמינות לא מוכחת</span></td><td data-l="ליבות">8</td><td data-l="RAM">40GB</td><td data-l="אחסון">150GB</td><td data-l="מחיר"><b>&euro;24.99</b></td><td data-l="סוג">משותפות (Xeon ישן)</td><td class="wrap-cell" data-l="אמינות">ספק חדש מ־LowEndBox, לא מוכח</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">Velohost 32GB <span class="tag warn">קוד LEB35</span></td><td data-l="ליבות">10</td><td data-l="RAM">32GB</td><td data-l="אחסון">250GB</td><td data-l="מחיר"><b>&euro;22.75</b></td><td data-l="סוג">EPYC משותף</td><td class="wrap-cell" data-l="אמינות">לא מוכחת; תנועה מוגבלת 1TB</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">netcup VPS 8000 G12.5</td><td data-l="ליבות">16</td><td data-l="RAM">64GB</td><td data-l="אחסון">1TB</td><td data-l="מחיר"><b>~&euro;67</b></td><td data-l="סוג">משותפות</td><td class="wrap-cell" data-l="אמינות">גבוהה, חוזה 12 חודשים</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">Hetzner CX53</td><td data-l="ליבות">16</td><td data-l="RAM">32GB</td><td data-l="אחסון">360GB</td><td data-l="מחיר"><b>&euro;29.49</b></td><td data-l="סוג">משותפות</td><td class="wrap-cell" data-l="אמינות">גבוהה מאוד, שעתי/חודשי</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">OVH VPS-4</td><td data-l="ליבות">8</td><td data-l="RAM">24GB</td><td data-l="אחסון">400GB</td><td data-l="מחיר"><b>~$26</b></td><td data-l="סוג">משותפות</td><td class="wrap-cell" data-l="אמינות">גבוהה</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">Scaleway Dedibox Pro-6-S (ייעודי)</td><td data-l="ליבות">4</td><td data-l="RAM">64GB</td><td data-l="אחסון">2&times;1TB</td><td data-l="מחיר"><b>&euro;48.99</b></td><td data-l="סוג">ייעודי מלא</td><td class="wrap-cell" data-l="אמינות">גבוהה</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">WholesaleInternet 64GB (ייעודי, ארה"ב)</td><td data-l="ליבות">2&times;Xeon</td><td data-l="RAM">64GB DDR3</td><td data-l="אחסון">לפי תצורה</td><td data-l="מחיר"><b>$40</b></td><td data-l="סוג">ייעודי מלא</td><td class="wrap-cell" data-l="אמינות">חומרה ישנה, חינם הקמה</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">Hetzner מכרז - i7-8700</td><td data-l="ליבות">6</td><td data-l="RAM">128GB</td><td data-l="אחסון">NVMe</td><td data-l="מחיר"><b>~&euro;65</b></td><td data-l="סוג">ייעודי מלא</td><td class="wrap-cell" data-l="אמינות">גבוהה מאוד</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">מחירי המכרז של Hetzner משתנים מדי יום. כלי מעקב: <a href="https://radar.iodev.org/">Server Radar</a> ו־<a href="https://servermarket.dev/">servermarket</a>.</p>
+
+<h2>חינם לצמיתות (Free tiers)</h2>
+
+<div class="card">
+<h3>Oracle Cloud Always Free <span class="tag free">חינם</span> <span class="tag warn">תנאים</span></h3>
+<div class="specs"><span><b>2 OCPU</b> ARM Ampere</span><span><b>12GB</b> RAM</span><span><b>200GB</b> אחסון</span><span><b>10TB</b> תנועה</span><span>+ 2 מכונות AMD זעירות (1GB)</span></div>
+<div class="price">$0 לנצח</div>
+<ul>
+<li>ב־15.6.2026 אורקל <b>קיצצה את התוכנית בחצי</b> (מ־4 OCPU/24GB) בלי הודעה מוקדמת; מכונות שחורגות כובו. <a href="https://www.infoq.com/news/2026/07/oracle-cloud-free-tier-limits/">InfoQ, יולי 2026</a>.</li>
+<li>מכונה עם ניצול מתחת ל־20% במשך 7 ימים <b>עלולה להימחק</b> - צריך לשמור עליה עסוקה.</li>
+<li>"אזל מהמלאי" נפוץ בהרשמה; נדרשת כרטיס אשראי אמיתי (פריפייד נדחה, לפי עדויות ישראליות).</li>
+<li>ARM בלבד במכונה הגדולה - לא כל תוכנת x86 תרוץ.</li>
+<li>לא מאומת: דיווחים שמשדרגים לתשלום (PAYG) שומרים 4 OCPU/24GB.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>שאר החינמיים - כולם קטנים או זמניים <span class="tag free">חינם</span></h3>
+<ul>
+<li><b>Google Cloud:</b> מכונת e2-micro אחת (1GB) חינם לנצח, 3 אזורים בארה"ב בלבד.</li>
+<li><b>Azure:</b> B1s חינם 750 שעות/חודש - ל־12 חודשים בלבד ללקוחות חדשים.</li>
+<li><b>AWS:</b> רק קרדיטים ($100-200 ל־6 חודשים), אין שרת חינמי קבוע.</li>
+<li><b>EUserv VS2-free:</b> 1GB, IPv6 בלבד - מגביל מאוד.</li>
+<li><b>GitHub Codespaces:</b> 120 שעות־ליבה בחודש חינם - טוב לסביבת פיתוח, לא לשרת תמידי.</li>
+<li><b>Kaggle / Colab:</b> פרצי GPU חינמיים לאימון זמני, לא לאירוח.</li>
+<li><b>מתו מפת המתים:</b> ClawCloud, Glitch, התוכנית החינמית של Fly.io, ניסיון Huawei. Hugging Face Spaces כבר לא נותן Docker חינמי. Koyeb - דיווחים סותרים על הרשמות חדשות.</li>
+</ul>
+</div>
+
+<h2>VPS זול עם הרבה RAM</h2>
+
+<div class="card">
+<h3>Contabo Cloud VPS 12 <span class="tag paid">&euro;20-25</span> <span class="tag warn">מכירת יתר</span></h3>
+<div class="specs"><span><b>12</b> ליבות</span><span><b>48GB</b> RAM</span><span><b>400GB</b> SSD</span><span><b>800Mbit</b></span></div>
+<div class="price">&euro;20/חודש בהתחייבות 24 חודשים; ~&euro;25 כולל מע"מ בתקופה קצרה</div>
+<ul>
+<li>המפרט מההודעה שקיבלת - זה המחיר האמיתי, לא $5.</li>
+<li><b>המחיר הנמוך בא עם מחיר:</b> מכירת יתר כבדה - "CPU steal" של 20-50% בשעות עומס, IOPS מצומצם. בבדיקת n8n אחת, Hetzner עם 3 ליבות/4GB השיג כפול תפוקה מ־Contabo עם 4/8GB.</li>
+<li>תמיכה בטיקטים: 2-72 שעות. החזר כספי 14 יום.</li>
+<li>VPS 18: 96GB בכ־$45.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>AffordableBytes (גרמניה) <span class="tag paid">&euro;7.99-24.99</span> <span class="tag unverified">לא מוכח</span></h3>
+<div class="specs"><span>11GB/4 ליבות <b>&euro;7.99</b></span><span>22GB/6 ליבות <b>&euro;15.99</b></span><span>40GB/8 ליבות <b>&euro;24.99</b></span></div>
+<p>הצעה מ־LowEndBox (8.10.2026). Xeon Gold ישן. ספק חדש ללא היסטוריית אמינות; לא ידוע אם פורט 25 פתוח. מתאים רק לניסויים שאפשר להפסיד.</p>
+</div>
+
+<div class="card">
+<h3>Velohost (גרמניה, EPYC) <span class="tag paid">&euro;9.10-22.75</span> <span class="tag warn">תנאי הנחה לא אומתו</span></h3>
+<div class="specs"><span>12GB/4 ליבות <b>&euro;9.10</b></span><span>18GB/6 ליבות <b>&euro;11.70</b></span><span>32GB/10 ליבות/250GB <b>&euro;22.75</b></span></div>
+<p>עם קוד LEB35. שים לב: רק 1TB תנועה בחודש - מגבלה משמעותית לעומת מתחרים. לא ידוע כמה זמן ההנחה בתוקף.</p>
+</div>
+
+<div class="card">
+<h3>netcup (גרמניה) - שתי משפחות <span class="tag paid">&euro;10-67</span></h3>
+<ul>
+<li><b>Root Servers (RS):</b> ליבות EPYC <b>ייעודיות</b> - פי 3 ליבות ייעודיות ליורו לעומת Hetzner CCX. RS1000 4c/8GB &euro;10.36 | RS2000 8c/16GB &euro;17.28 | <b>RS4000 12c/32GB &euro;32.09</b>. חוזה 12/24 חודשים.</li>
+<li><b>VPS רגיל:</b> VPS 4000 12c/32GB &euro;45.36 | VPS 8000 G12.5 16c/64GB/1TB כ־&euro;67 (מקורות נעו 45-77, התייקר בספטמבר).</li>
+<li><b>ARM:</b> 2c/4GB &euro;8.26 | 4c/8GB &euro;14.50 | 8c/16GB &euro;26.92 | 12c/32GB &euro;45.36.</li>
+</ul>
+<p class="note">אזהרה כללית: Time4VPS, Hostinger ו־IONOS - מחירי חידוש קופצים פי 2-3. IONOS עלה 18.9% השנה.</p>
+</div>
+
+<div class="card">
+<h3>עסקאות קטנות מפורומים (כותרות בלבד - לא אומת) <span class="tag unverified">לא אומת</span></h3>
+<ul>
+<li>Servitro: 4GB ב־$20 <b>לשנה</b></li>
+<li>Godlike.Host: 2GB ב־$1.83/חודש</li>
+<li>DigiRDP - הצעות דומות</li>
+</ul>
+<p class="note">כאלה מופיעות ב־LowEndTalk/LowEndBox כל שבוע. חלקן נעלמות תוך חודשים - לגבות הכל.</p>
+</div>
+
+<h2>שרתים ייעודיים (Dedicated) - הכי הרבה RAM ליורו</h2>
+
+<div class="card">
+<h3>מכרז השרתים של Hetzner (Server Auction) <span class="tag paid">&euro;49-97</span></h3>
+<div class="specs"><span>Ryzen 5 3600 / <b>64GB</b> / 1TB NVMe + 2&times;6TB: <b>&euro;49-69</b></span><span>i7-8700 / <b>128GB</b>: <b>~&euro;65</b></span></div>
+<ul>
+<li>שרתים משומשים במחסן Hetzner בגרמניה (HEL), בלי דמי הקמה, 1Gbit ללא הגבלת תנועה.</li>
+<li>המלאי מתחלף כל יום - מעקב: <a href="https://radar.iodev.org/">radar.iodev.org</a>, <a href="https://www.hetzner.com/sb">hetzner.com/sb</a>.</li>
+<li>דגמים חדשים במחירון: AX41-LTD 64GB &euro;59 | EX44-LTD (i5-13500) 64GB &euro;59 | AX42 &euro;97.30+&euro;49 הקמה (מפרט לא אומת).</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Kimsufi / SYS (מבית OVH) <span class="tag paid">&euro;17-30+הקמה</span></h3>
+<div class="specs"><span>KS-1: 32GB ECC <b>&euro;16.99</b>+הקמה (מלאי נמוך!)</span><span>SYS-1: Xeon E-2136, 32GB NVMe <b>&euro;29.99</b>+הקמה</span></div>
+<p>OVH RISE-S (Ryzen 9700X, 64GB DDR5): ~&euro;65+הקמה. RISE-M (9900X, 12 ליבות, 64GB): $118.</p>
+</div>
+
+<div class="card">
+<h3>Scaleway Dedibox ו־Elastic Metal (צרפת) <span class="tag paid">&euro;35-120</span></h3>
+<ul>
+<li>Dedibox: Pro-4-S 32GB &euro;34.99 | Pro-6-S 64GB &euro;48.99 | Pro-4-L 96GB &euro;69.99</li>
+<li>Elastic Metal (חיוב שעתי): Ryzen 3600/32GB &euro;39.99 | 2&times;Xeon/<b>192GB</b> &euro;94.99 | EPYC 4345P/64GB &euro;119.99</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>ארה"ב זול (חומרה ישנה, הרבה RAM) <span class="tag paid">$40-160</span></h3>
+<ul>
+<li><b>WholesaleInternet</b> (קנזס, הקמה חינם): 64GB דואל Xeon $40 | 128GB E5-2680v2 $119 | 128GB E5-2683v4 $159</li>
+<li><b>QuickServers</b> (מ־LowEndTalk, 16.10): דואל E5-2680v2 128GB $44.99 | דואל E5-2690 256GB $64.99 <span class="flag">- מלאי ואמינות לא אומתו, סיכון</span></li>
+<li><b>Dedispec:</b> 128GB דואל E5 ב־$65 (לא אומת)</li>
+<li><b>ReliableSite:</b> 32GB $49 | 64GB $99 | 128GB Ryzen $149</li>
+<li><b>Leaseweb:</b> 32GB בכ־$34-54 | <b>Worldstream</b> (הולנד): 32GB $54, 64GB $74 | <b>GTHost:</b> מ־$39</li>
+</ul>
+<p class="note">שים לב: שרת בארה"ב = ~130ms מישראל, לעומת 52-70ms לגרמניה. לעבודת רקע זה לא משנה; לסוכנים אינטראקטיביים כן.</p>
+</div>
+
+<h2>בישראל - זמן תגובה נמוך</h2>
+
+<div class="card">
+<h3>Kamatera (ישראלית) <span class="tag paid">לפי תצורה</span></h3>
+<ul>
+<li>5 חוות שרתים בארץ, SLA 99.95%, חיוב שעתי, תצורות גדולות בהתאמה אישית.</li>
+<li><b>ניסיון 30 יום בשווי $100</b>; מקבלים דביט/פריפייד/PayPal (יתרון לישראלים); תמיכה טלפונית בעברית: <span dir="ltr">+972 74 705 0320</span>.</li>
+<li>דירוג Trustpilot 4.2 (389 ביקורות) - עם תלונות על חיוב והשהיית חשבונות. לקרוא תנאים לפני.</li>
+<li>לא אומת: OMC Cloud ככל הנראה אותה קבוצה, ניסיון בלי כרטיס.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>עוד בארץ ובאזור</h3>
+<ul>
+<li><b>Vultr תל אביב:</b> 8 ליבות/16GB $96 | 12/24GB $144 | Optimized 8c/64GB ~$230 - יקר.</li>
+<li><b>EDIS תל אביב:</b> מ־&euro;7.49, מקסימום ~8 ליבות/24GB.</li>
+<li>אזורי ענן גדולים בארץ: AWS (il-central-1), GCP (me-west1), Azure Israel Central, Oracle ירושלים.</li>
+<li><b>זמני תגובה מישראל:</b> בארץ &lt;10ms | דובאי ~30ms | גרמניה 52-70ms | ניו יורק ~130ms.</li>
+</ul>
+</div>
+
+<h2>ARM - זול לוואט ולשקל, אבל לא x86</h2>
+<div class="card">
+<ul>
+<li><b>Oracle Free:</b> ה־12GB החינמיים הם ARM - ראה סעיף החינם.</li>
+<li><b>Hetzner CAX</b> (Ampere): CAX11 2c/4GB &euro;5.99-6.49 <span class="flag">(פער בין הדוקומנטציה לעמוד המוצר)</span> | CAX21 4c/8GB &euro;10.49 | CAX31 8c/16GB &euro;20.99 | CAX41 16c/32GB &euro;40.99.</li>
+<li><b>netcup ARM:</b> ראה למעלה, עד 12c/32GB ב־&euro;45.36.</li>
+</ul>
+<p class="note">Docker images מרובים ארכיטקטורות רצים; כלים קנייניים ישנים עלולים לא. לבדוק כל כלי לפני.</p>
+</div>
+
+<h2>GPU וספוט - רק אם מריצים מודלים מקומיים</h2>
+<div class="card">
+<ul>
+<li><b>Salad:</b> RTX 3090 24GB בכ־$66/חודש (קונטיינר, ניתן לקטיעה) - הזול ביותר.</li>
+<li><b>RunPod:</b> 3090 ב־$0.22/שעה (~$161/חודש), 4090 ב־$0.34/שעה.</li>
+<li><b>Vast.ai:</b> 4090 מ־$0.34-0.44/שעה - איכות משתנה בין מארחים.</li>
+<li><b>Lambda:</b> H100 ב־$3.29/שעה. <b>Modal:</b> serverless GPU, $30 קרדיט/חודש.</li>
+<li><b>TensorDock ו־Akash:</b> טבלה של TensorDock מיולי 2024 (לא אומתה); Akash אגרגטור - לא אומת.</li>
+<li>ספוט של הגדולים (T4/L4): אינדיקטיבי בלבד, זמינות משתנה.</li>
+</ul>
+<p class="note">אין GPU חינמי קבוע. Kaggle/Colab נותנים פרצים חינמיים לאימון בלבד.</p>
+</div>
+
+<h2>קרדיטים ותוכניות - מה רלוונטי אליך</h2>
+<div class="card">
+<p><b>בלי חברה רשומה ובלי סטודנט:</b></p>
+<ul>
+<li><b>Azure:</b> $1,000 מיידי (עד $5,000 אחרי אימות עסקי).</li>
+<li><b>Google Cloud:</b> $300 ניסיון.</li>
+<li><b>AWS:</b> $100-200 ל־6 חודשים.</li>
+</ul>
+<p><b>דורשים אתר מוצר + מייל עסקי (אפשרי אם יש פרויקט באוויר):</b> AWS Activate Founders $1k-5k | GCP Start $2k | Microsoft for Startups עד $150k (מסלול בלי משקיע: $1k ואז +$4k) | DigitalOcean קרדיטים לשנה (סכום לא פורסם) | Scaleway Founders &euro;1,000 | OVHcloud Startup Start &euro;10,000 לשנה.</p>
+<p><b>לא רלוונטי:</b> תוכניות סטודנטים; מדרגות ממומנות־VC (GCP Scale, AWS Portfolio, Vultr). ל־Hetzner אין תוכנית סטארטאפים בכלל.</p>
+</div>
+
+<h2>מה לא אומת (סומן U במחקר)</h2>
+<div class="card">
+<ul>
+<li>דיווח ששדרוג Oracle לתשלום שומר 4 OCPU/24GB.</li>
+<li>AffordableBytes - ספק חדש, אמינות ופורט 25 לא ידועים.</li>
+<li>Velohost - תוקף קוד ההנחה LEB35 לא ידוע.</li>
+<li>QuickServers ו־Dedispec - מלאי ואמינות לא אומתו.</li>
+<li>Hetzner CAX11 - פער מחיר בין דוקומנטציה (&euro;5.99) לעמוד מוצר (&euro;6.49).</li>
+<li>Hetzner AX42 - מפרט לא אומת.</li>
+<li>OMC Cloud = קבוצת Kamatera - לא אומת.</li>
+<li>TensorDock - טבלת מחירים מיולי 2024.</li>
+<li>Koyeb - דיווחים סותרים אם הרשמות חדשות פתוחות.</li>
+<li>Servitro, Godlike.Host, DigiRDP - כותרות פורום בלבד.</li>
+<li>netcup VPS 8000 - מקורות נעים &euro;45-77.</li>
+</ul>
+</div>
+
+<h2>רקע: למה הכל התייקר</h2>
+<p>ב־2026 יש מחסור עולמי בזיכרון (ביקוש AI). מחירי ענן של Hetzner עלו 30-43% (15.6.2026), netcup כ־40%, IONOS 18.9%. שרתים ייעודיים התייקרו רק 3-21% - ולכן הם כרגע קנייה חכמה יותר מענן משותף.</p>
+
+<h2>מקורות</h2>
+<ul class="src">
+<li>אתרי ספקים (נבדקו היום, 21.10.2026): <a href="https://contabo.com/en/vps/">contabo.com/en/vps</a> &middot; <a href="https://www.hetzner.com/cloud">hetzner.com/cloud</a> &middot; <a href="https://www.hetzner.com/sb">hetzner.com/sb (מכרז)</a> &middot; <a href="https://www.netcup.com/en/server">netcup.com</a> &middot; <a href="https://www.scaleway.com/en/dedibox/">scaleway.com/dedibox</a> &middot; <a href="https://www.ovhcloud.com/en/bare-metal/rise/">ovhcloud.com/rise</a> &middot; <a href="https://www.vultr.com/pricing/">vultr.com/pricing</a> &middot; <a href="https://www.kamatera.com/">kamatera.com</a> &middot; <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm">Oracle Always Free (דוקומנטציה)</a></li>
+<li>קהילה ועסקאות: <a href="https://www.lowendtalk.com/">LowEndTalk</a> (פוסטים מ־8.10 ו־16.10.2026) &middot; <a href="https://lowendbox.com/">LowEndBox</a> (8.10.2026)</li>
+<li>מעקב מחירים: <a href="https://www.serverhunter.com/">ServerHunter</a> &middot; <a href="https://servermarket.dev/">servermarket.dev</a> &middot; <a href="https://radar.iodev.org/">radar.iodev.org</a></li>
+<li>רקע: <a href="https://www.infoq.com/news/2026/07/oracle-cloud-free-tier-limits/">InfoQ - אורקל מקצצת את התוכנית החינמית, יולי 2026</a></li>
+<li>מחירי AffordableBytes, Velohost, QuickServers ועסקאות פורום: מקורם בפוסטים ב־LowEndBox/LowEndTalk בתאריכים שצוינו; לא אומתו מול אתר הספק.</li>
+</ul>
+
+<footer>
+מחקר זה נערך ב־21.10.2026. מחירים משתנים, במיוחד מכרזים ועסקאות פורום. שום דבר לא נרכש ולא נפתחו הרשמות. לפני הזמנה: לוודא מחיר סופי באתר הספק, תנאי ביטול, ואמצעי תשלום.
+</footer>
+
+</div>
+</body>
+</html>
