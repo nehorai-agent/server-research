@@ -80,7 +80,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);
 <div class="reco">
 <ul>
 <li><b>עבודת רקע ובאצ'ים (לא רגיש לביצועים משתנים):</b> Contabo VPS 12 (&euro;20-25) או AffordableBytes 40GB (&euro;24.99, אמינות לא מוכחת).</li>
-<li><b>סוכנים שצריכים יציבות:</b> netcup RS4000 - 12 ליבות <b>ייעודיות</b>/32GB ב־&euro;32, או שרת ייעודי ממכרז Hetzner - 64GB ב־&euro;49-65.</li>
+<li><b>סוכנים שצריכים יציבות:</b> שרת ייעודי ממכרז Hetzner - 64GB ב־&euro;49-65. חלופה זולה עם ליבות ייעודיות: Layer7 בפרנקפורט - 32GB ב־&euro;18.50 (דיסק מוגבל IOPS).</li>
 <li><b>חינם לגמרי, לנסיון:</b> Oracle Always Free - 12GB ARM, בתנאים שמפורטים למטה.</li>
 <li><b>זמן תגובה נמוך מישראל:</b> Kamatera (חברה ישראלית, 5 חוות שרתים בארץ, תמיכה בעברית) - פחות מ־10ms.</li>
 <li><b>מודלי שפה מקומיים (LLM):</b> לא שרת רגיל - צריך GPU, ושם ספוט זול: Salad מ־$66/חודש ל־RTX 3090.</li>
@@ -94,7 +94,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);
 <tbody>
 <tr><td class="wrap-cell" data-l="ספק">Oracle Always Free</td><td data-l="ליבות">2 (ARM)</td><td data-l="RAM">12GB</td><td data-l="אחסון">200GB</td><td data-l="מחיר"><b>חינם</b></td><td data-l="סוג">ARM משותף</td><td class="wrap-cell" data-l="אמינות">גבוהה, אבל עלול להימחק אם לא פעיל שבוע</td></tr>
 <tr><td class="wrap-cell" data-l="ספק">Kimsufi KS-1 (ייעודי!)</td><td data-l="ליבות">4</td><td data-l="RAM">32GB ECC</td><td data-l="אחסון">1TB</td><td data-l="מחיר"><b>&euro;16.99</b>+הקמה</td><td data-l="סוג">ייעודי מלא</td><td class="wrap-cell" data-l="אמינות">גבוהה (OVH), מלאי נמוך</td></tr>
-<tr><td class="wrap-cell" data-l="ספק">netcup RS4000</td><td data-l="ליבות">12</td><td data-l="RAM">32GB</td><td data-l="אחסון">1TB</td><td data-l="מחיר"><b>&euro;32.09</b></td><td data-l="סוג"><b>ייעודיות</b></td><td class="wrap-cell" data-l="אמינות">גבוהה מאוד, חוזה 12/24 חודשים</td></tr>
+<tr><td class="wrap-cell" data-l="ספק">Layer7 EPYC VDS (פרנקפורט) <span class="tag warn">I/O מוגבל</span></td><td data-l="ליבות">2 ייעודיים</td><td data-l="RAM">32GB</td><td data-l="אחסון">80GB NVMe</td><td data-l="מחיר"><b>&euro;18.50</b></td><td data-l="סוג">ליבות ייעודיות</td><td class="wrap-cell" data-l="אמינות">100% CPU מותר; דיסק 1,000 IOPS בלבד</td></tr>
 <tr><td class="wrap-cell" data-l="ספק">Hetzner מכרז - Ryzen 5 3600</td><td data-l="ליבות">6</td><td data-l="RAM">64GB</td><td data-l="אחסון">1TB NVMe + 2&times;6TB</td><td data-l="מחיר"><b>&euro;49-69</b></td><td data-l="סוג">ייעודי מלא</td><td class="wrap-cell" data-l="אמינות">גבוהה מאוד, ללא דמי הקמה</td></tr>
 <tr><td class="wrap-cell" data-l="ספק">Contabo VPS 12</td><td data-l="ליבות">12</td><td data-l="RAM">48GB</td><td data-l="אחסון">400GB SSD</td><td data-l="מחיר"><b>&euro;20</b> (בהתחייבות 24 ח׳)</td><td data-l="סוג">משותפות, עמוסות</td><td class="wrap-cell" data-l="אמינות">בינונית - פירוט למטה</td></tr>
 <tr><td class="wrap-cell" data-l="ספק">AffordableBytes 40GB <span class="tag unverified">אמינות לא מוכחת</span></td><td data-l="ליבות">8</td><td data-l="RAM">40GB</td><td data-l="אחסון">150GB</td><td data-l="מחיר"><b>&euro;24.99</b></td><td data-l="סוג">משותפות (Xeon ישן)</td><td class="wrap-cell" data-l="אמינות">ספק חדש מ־LowEndBox, לא מוכח</td></tr>
@@ -167,8 +167,8 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);
 <div class="card">
 <h3>netcup (גרמניה) - שתי משפחות <span class="tag paid">&euro;10-67</span></h3>
 <ul>
-<li><b>Root Servers (RS):</b> ליבות EPYC <b>ייעודיות</b> - פי 3 ליבות ייעודיות ליורו לעומת Hetzner CCX. RS1000 4c/8GB &euro;10.36 | RS2000 8c/16GB &euro;17.28 | <b>RS4000 12c/32GB &euro;32.09</b>. חוזה 12/24 חודשים.</li>
-<li><b>VPS רגיל:</b> VPS 4000 12c/32GB &euro;45.36 | VPS 8000 G12.5 16c/64GB/1TB כ־&euro;67 (מקורות נעו 45-77, התייקר בספטמבר).</li>
+<li><b>Root Servers (RS):</b> ליבות EPYC 9645 <b>ייעודיות</b>, אומתו היום באתר: RS1000 4c/8GB <b>&euro;21.73</b> | RS2000 8c/16GB <b>&euro;40.70</b> | RS4000 12c/32GB <b>&euro;77.83</b> | RS8000 16c/64GB &euro;148.42. אחרי שתי העלאות מחיר ב־2026 זה כבר לא דיל - מכרז Hetzner משתלם יותר. חוזה 12 חודשים.</li>
+<li><b>VPS רגיל:</b> VPS 4000 12c/32GB &euro;45.36 | VPS 8000 G12.5 16c/64GB/1TB <b>&euro;67.11</b> (אומת היום).</li>
 <li><b>ARM:</b> 2c/4GB &euro;8.26 | 4c/8GB &euro;14.50 | 8c/16GB &euro;26.92 | 12c/32GB &euro;45.36.</li>
 </ul>
 <p class="note">אזהרה כללית: Time4VPS, Hostinger ו־IONOS - מחירי חידוש קופצים פי 2-3. IONOS עלה 18.9% השנה.</p>
@@ -238,6 +238,26 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);
 <li>Serv00 הוא אירוח שיתופי, לא VPS - לא רלוונטי.</li>
 <li>שים לב: ליבות Xeon ישנות (v2/v3) חלשות משמעותית לליבה - להשוות לפי ביצועי העבודה שלך, לא לפי מספר ליבות.</li>
 </ul>
+</div>
+
+
+<div class="card">
+<h3>תוספות מסוכני dot ו־Muse (Slack, 21.10.2026) <span class="tag warn">חלק לא אומת</span></h3>
+<ul>
+<li><b>Layer7 EPYC VDS</b> (פרנקפורט): 32GB/2 ליבות ייעודיות/80GB NVMe - <b>&euro;18.50</b>; חלופה 16GB/4 ליבות - &euro;16.90. הקמה &euro;0, 100% CPU רציף מותר. <b>מגבלה חשובה:</b> דיסק 1,000 IOPS / 250MB/s - בעייתי לבילדים כבדים. נעילת מחיר חידוש לא אומתה. <a href="https://www.layer7.net/cloud-server">layer7.net</a></li>
+<li><b>ServaRica FAT Slice 8</b> (מונטריאול): 8 ליבות EPYC 7663 ייעודיות/16GB/240GB NVMe - <b>$30</b>/חודש או $330/שנה. 24TB ב־10Gbps ואז 10Mbps. דמי הקמה לא הוכרעו. <a href="https://servarica.com/browse/">servarica.com</a>. גם: Xen Dedicated 256GB DDR3 ב־$49 - חומרה ישנה, latency גבוה מישראל.</li>
+<li><b>AlphaVPS</b> (בולגריה): C16G 16GB/6 vCore משותפים/140GB - <b>&euro;11.99</b>; C32G 32GB/8/240GB - &euro;22.99. <b>אזהרה:</b> תנאי השירות מגבילים CPU/I-O אינטנסיביים ושומרים זכות לשנות מחיר - טוב לזיכרון לפיתוח, פחות ל־CI רציף. <a href="https://alphavps.com/cheap-vps">alphavps.com</a></li>
+<li><b>HostNOC</b> (מודעת LowEndTalk, 8.10): E3-1230v2/16GB/1TB, 1Gbps ללא הגבלה - <b>$24.95</b>; i7-4790K/32GB/2&times;1TB בדיסלדורף - $39.95. ספק קטן, אומת מהמודעה בלבד.</li>
+<li><b>PulsedMedia MiniDedi</b> (פינלנד): MD19 i5-6500t/32GB/1TB NVMe, 1Gbps ללא הגבלה - <b>&euro;21.99</b>; MD11 i5-8500t/16GB/2TB - &euro;52.49. מחירים מביקורת צד ג׳, לא אומתו ישירות.</li>
+<li><b>Kimsufi נוספים:</b> KS-4 (E3-1230v6/16GB) $20+הקמה $20; KS-7 (EPYC 7451, 24 ליבות) &euro;58.89. מחיר משתנה לפי אזור.</li>
+</ul>
+<ul>
+<li><b>EDIS בפתח־תקווה</b> (חוות Bezeq International): מ־&euro;7.49, ~3ms לפי מדידותיהם. <a href="https://www.edisglobal.com/">edisglobal.com</a></li>
+<li><b>Ultahost</b> מציע VPS במיקום ישראל מ־$4.80/חודש - מחיר מבצע ל־24 חודשים מעמוד שנסרק לפני ~9 חודשים, <span class="flag">לא אומת</span>.</li>
+<li>נקודת Hetzner הקרובה לישראל: הלסינקי (~60-70ms).</li>
+<li>מבצעי GreenCloud אזלו; מחיר/מלאי של Advin ו־Dacentec לא אומתו.</li>
+</ul>
+<p class="note">עקרון חשוב מהמחקר: להשוות בנפרד RAM, כוח CPU רציף מותר, ו־I/O - לא לדרג לפי מספר vCPU בלבד.</p>
 </div>
 
 <h2>בישראל - זמן תגובה נמוך</h2>
@@ -311,6 +331,11 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);
 <li>Koyeb - דיווחים סותרים אם הרשמות חדשות פתוחות.</li>
 <li>Servitro, Godlike.Host, DigiRDP - כותרות פורום בלבד.</li>
 <li>ServaRica, TNAHosting, OneProvider, RackNerd - מחירי מחירון ממקור שני, קופה ומלאי לא אומתו.</li>
+<li>Layer7 - נעילת מחיר חידוש לא אומתה; מוניטין מעורב ב־LowEndTalk.</li>
+<li>HostNOC - ספק קטן, אומת ממודעת פורום בלבד.</li>
+<li>PulsedMedia - מחירים מביקורת צד ג׳.</li>
+<li>Ultahost ישראל - מחיר מעמוד בן ~9 חודשים.</li>
+<li>AlphaVPS - סתירה בין שיווק "מחיר קבוע" לתנאי שירות.</li>
 <li>netcup VPS 8000 - מקורות נעים &euro;45-77.</li>
 </ul>
 </div>
@@ -320,11 +345,12 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);
 
 <h2>מקורות</h2>
 <ul class="src">
-<li>אתרי ספקים (נבדקו היום, 21.10.2026): <a href="https://contabo.com/en/vps/">contabo.com/en/vps</a> &middot; <a href="https://www.hetzner.com/cloud">hetzner.com/cloud</a> &middot; <a href="https://www.hetzner.com/sb">hetzner.com/sb (מכרז)</a> &middot; <a href="https://www.netcup.com/en/server">netcup.com</a> &middot; <a href="https://www.scaleway.com/en/dedibox/">scaleway.com/dedibox</a> &middot; <a href="https://www.ovhcloud.com/en/bare-metal/rise/">ovhcloud.com/rise</a> &middot; <a href="https://www.vultr.com/pricing/">vultr.com/pricing</a> &middot; <a href="https://www.kamatera.com/">kamatera.com</a> &middot; <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm">Oracle Always Free (דוקומנטציה)</a></li>
+<li>אתרי ספקים (נבדקו היום, 21.10.2026): <a href="https://contabo.com/en/vps/">contabo.com/en/vps</a> &middot; <a href="https://www.hetzner.com/cloud">hetzner.com/cloud</a> &middot; <a href="https://www.hetzner.com/sb">hetzner.com/sb (מכרז)</a> &middot; <a href="https://www.netcup.com/en/server">netcup.com</a> (מחירי RS/VPS אומתו מול האתר היום) &middot; <a href="https://www.scaleway.com/en/dedibox/">scaleway.com/dedibox</a> &middot; <a href="https://www.ovhcloud.com/en/bare-metal/rise/">ovhcloud.com/rise</a> &middot; <a href="https://www.vultr.com/pricing/">vultr.com/pricing</a> &middot; <a href="https://www.kamatera.com/">kamatera.com</a> &middot; <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm">Oracle Always Free (דוקומנטציה)</a></li>
 <li>קהילה ועסקאות: <a href="https://www.lowendtalk.com/">LowEndTalk</a> (פוסטים מ־8.10 ו־16.10.2026) &middot; <a href="https://lowendbox.com/">LowEndBox</a> (8.10.2026)</li>
 <li>מעקב מחירים: <a href="https://www.serverhunter.com/">ServerHunter</a> &middot; <a href="https://servermarket.dev/">servermarket.dev</a> &middot; <a href="https://radar.iodev.org/">radar.iodev.org</a></li>
 <li>רקע: <a href="https://www.infoq.com/news/2026/07/oracle-cloud-free-tier-limits/">InfoQ - אורקל מקצצת את התוכנית החינמית, יולי 2026</a></li>
 <li>מחירי AffordableBytes, Velohost, QuickServers ועסקאות פורום: מקורם בפוסטים ב־LowEndBox/LowEndTalk בתאריכים שצוינו; לא אומתו מול אתר הספק.</li>
+<li>dot ו־Muse (סוכני מחקר בערוץ Slack, 21.10.2026): <a href="https://www.layer7.net/cloud-server">Layer7</a>, <a href="https://servarica.com/browse/">ServaRica</a>, <a href="https://alphavps.com/cheap-vps">AlphaVPS</a>, <a href="https://www.edisglobal.com/">EDIS</a>, <a href="https://lowendtalk.com/discussion/203352/any-reviews-on-layer7-net">דיון Layer7 ב־LowEndTalk</a>.</li>
 <li>מקור שני (סוכן מחקר נוסף, 21.10.2026): <a href="https://servarica.com/plan/615/">ServaRica Slim Slice 16</a>, <a href="https://servarica.com/plan/670/">ServaRica FAT Slice 16</a>, <a href="https://tnahosting.net/dedicated/">TNAHosting Dedicated</a> - מחירון בלבד, לא אומת על ידינו.</li>
 </ul>
 
